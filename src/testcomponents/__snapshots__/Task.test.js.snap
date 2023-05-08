@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Task component is working correctly matches snapshot  1`] = `
+<div
+  data-testid="task-test-15"
+>
+  <h3>
+    Hola
+  </h3>
+  <div>
+    <span>
+      ID: 
+      15
+    </span>
+    <span>
+      Descripción: 
+      Snapshot 2
+    </span>
+  </div>
+  <div>
+    <label
+      name="completed"
+    >
+      Completado
+    </label>
+    <input
+      checked={false}
+      id="checkbox"
+      name="completed"
+      onChange={[Function]}
+      type="checkbox"
+    />
+  </div>
+</div>
+`;

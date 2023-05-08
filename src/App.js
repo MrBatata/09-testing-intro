@@ -1,25 +1,22 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Task from './testcomponents/Task';
 
 function App() {
+
+  const tasks = [
+    { id: 1, description: 'Tarea 1', isCompleted: true },
+    { id: 2, description: 'Tarea 2', isCompleted: true },
+    { id: 3, description: 'Tarea 3', isCompleted: false }
+  ]
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Introducción a testing</h1>
+      {tasks.map((t, index) => <Task task={t} key={index}></Task>
+      )}
     </div>
   );
-}
+};
 
 export default App;
